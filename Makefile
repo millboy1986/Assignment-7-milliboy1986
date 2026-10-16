@@ -13,5 +13,6 @@ server: server.o game.o save.o
 	$(CC) -o $@ $^ $(CFLAGS)
 
 clean:
-	rm *.o
-	rm server client
+	rm -f *.o
+	rm -f client
+	rm -f server
